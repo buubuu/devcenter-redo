@@ -71,6 +71,9 @@ header{
     left: 400px;
     
 }*/
+.banner-text{
+  padding: 0 20px;
+}
 .banner-text:before{
   content: " ";
 }
@@ -91,7 +94,6 @@ header{
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    display: none;
     line-height: 1.57;
     text-align: center;
 }
@@ -108,7 +110,7 @@ header{
 .typewriter h5{
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid #09abf4; /* The typewriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
+ white-space: nowrap;  .cSlider .padding pKeeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
@@ -118,7 +120,6 @@ header{
   -webkit-animation-fill-mode:both;
    -webkit-animation-delay: 5s;
   animation-delay: 5s;
-  display: block;
 }
 
 /* The typing effect */
@@ -290,7 +291,7 @@ header{
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    margin:0 30%;
+    /*margin:0 30%;*/
 }
 .cSlider .circle img{
 	margin-left: 14px;
@@ -303,7 +304,6 @@ header{
     letter-spacing: 1.2px;
     text-align: center;
     color: #212121;
-    color: #fff;
 }
 .cSlider .padding p{
 	font-family: OpenSans;
@@ -311,16 +311,16 @@ header{
     font-style: normal;
     font-stretch: normal;
     line-height: 1.57;
-    text-align: center;
+    text-align: justify;
     color: #9fa3a7;
     color: #000;
 }
-.cSlider .padding .sImage{
+/*.cSlider .padding .sImage{
 	margin: 0 30%;
 }
 .cSlider .padding .cImage{
 	margin: 0 35%;
-}
+}*/
 
 
 
@@ -374,6 +374,7 @@ header{
   color: #fff;
   padding-right: 40px;
   padding-bottom: 40px;
+  text-align: justify;
 }
 #border-bottom:after{
 	content: " ";
@@ -589,6 +590,9 @@ footer{
     font-stretch: normal;
     letter-spacing: 1.2px;
     color: #ffffff;
+}
+.social-links h3{
+      padding: 0 12em;
 }
 .copyright{
 	padding: 30px 0 10px 0;

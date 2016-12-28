@@ -1,3 +1,20 @@
+@media (min-width: 1028px) {
+	.banner-text{
+
+	}
+	.typewriter h1{
+		width: 68%;
+	}
+	@keyframes typing {
+	  from { width: 0 }
+	  to { width: 68% }
+	}
+}
+@media (max-width: 1028px) {
+	#cRow{
+		overflow-x: auto;
+	}
+}
 @media (min-width: 768px){
 	.navbar-nav>li {
 	    width: 20%;
@@ -8,15 +25,15 @@
 		left: 200px;
 	}
 	.banner-text h1{
-		font-size: 2em;
+		font-size: 1.5em;
 	}
-	.typewriter h5{
+	/*.typewriter h5{
 		width: 80%;
 	}
 	@keyframes typing2 {
 	  from { width: 0 }
 	  to { width: 80% }
-	}
+	}*/
 	.nav-div, .social-links, .terms{
 		text-align: center;
 	}
@@ -35,6 +52,7 @@
 	    clear: left;
 	    width: 100%;
 	    /* width: 20%; */
+	    text-align: center;
 	    margin: 0.2em 0;
 	    /* border: 1px solid gray; 
 	    border-right: 1px solid #fff;*/
@@ -49,7 +67,7 @@
 	.social-links ul {
 	    display: flex;
 	    text-align: center;
-	    padding: 0 200px;
+	    padding: 0 160px;
 	}
 	.bounce{
 		display: none;
@@ -60,12 +78,16 @@
 	#choosePath .center .cards{
 		margin-bottom: 2em;
 	}
-	#cRow{
-		 padding: 0 20px 0 165px;
+	.half-section{
+		padding-right: 0;
 	}
+	
 	.flip{
-		margin-bottom: 1em;
+		margin-bottom: 5.5em;
 	}
+	#cRow {
+    padding: 0 20px 0 160px;
+}
 }
 @media (max-width:568px) {
 	.navbar-default .navbar-toggle{
@@ -103,5 +125,10 @@
 	#cRow{
 		padding: 0 10px 0 30px;
 	}
-
+	.half-section, .other-half-section .c-sections .ctext{
+		padding-right: 0;
+	}
+	.social-links ul{
+		padding: 0 30px;
+	}
 }
