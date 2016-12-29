@@ -212,6 +212,12 @@ header{
     text-align: center;
     color: #212121;
 }
+#create{
+  -moz-animation-delay: 7s;
+  -o-animation-delay: 7s;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+}
 .ui-tabs.ui-tabs-vertical {
     padding: 0;
     /*width: 42em;*/
