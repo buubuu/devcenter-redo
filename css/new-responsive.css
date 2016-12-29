@@ -14,6 +14,10 @@
 	#cRow{
 		overflow-x: auto;
 	}
+	.typewriter h1{
+		letter-spacing: 0;
+		width: 100%;
+	}
 }
 @media (min-width: 768px){
 	.navbar-nav>li {
@@ -23,17 +27,26 @@
 @media (max-width: 768px) {
 	.banner-text{
 		left: 200px;
+		position: absolute;
+	    left: 0;
+	    right: 0;
+	    top: 40%;
 	}
-	.banner-text h1{
-		font-size: 1.5em;
+	/*.banner-text h1{
+		font-size: 2.7em;
+	}*/
+	.typewriter h1,.typewriter h5{
+		letter-spacing: 0;
+		width: 100%;
 	}
-	/*.typewriter h5{
-		width: 80%;
+	@keyframes typing {
+	  from { width: 0 }
+	  to { width: 100% }
 	}
 	@keyframes typing2 {
 	  from { width: 0 }
-	  to { width: 80% }
-	}*/
+	  to { width: 100% }
+	}
 	.nav-div, .social-links, .terms{
 		text-align: center;
 	}
@@ -70,7 +83,7 @@
 	.social-links ul {
 	    display: flex;
 	    text-align: center;
-	    padding: 0 160px;
+	    padding: 0 230px;
 	}
 	.bounce{
 		display: none;
@@ -83,14 +96,47 @@
 	}
 	.half-section{
 		padding-right: 0;
+		padding-bottom: 20px;
 	}
 	
 	.flip{
 		margin-bottom: 5.5em;
 	}
-	#cRow {
-    padding: 0 20px 0 160px;
+	
 }
+@media (max-width: 640px) {
+	#border-bottom:after{
+		display: none;
+	}
+	.half-section:after{
+		content: " ";
+	    position: absolute;
+	    width: 90%;
+	    height: 1px;
+	    bottom: 0;
+	    left: 0;
+		border-bottom: solid 0.5px #fff;
+	}
+	.col-sm-6.col-md-6.other-half-section{
+		padding: 0;
+	}
+	.other-half-section .c-sections{
+		padding: 0;
+	}
+	.flip{
+		margin-left: 0px;
+	}
+	#cRow {
+	    padding: 0 100px 0 100px;
+	}
+	.flip .card .front{
+		padding-top: 18%;
+	}
+}
+@media only screen (min-device-width: 568px)and (max-device-width:640px){
+	.social-links ul {
+	    padding: 0 130px;
+	}
 }
 @media (max-width:568px) {
 	.navbar-default .navbar-toggle{
@@ -124,14 +170,76 @@
 	}
 	.banner-text{
 		left: 0px;
+		/*padding-top: 30%;*/
+	}
+	.banner-text h1{
+		font-size: 2.7em;
+	}
+	.banner-text h5{
+	  display: none;
+	}
+	.banner-text .display-h{
+	  display: block;
+	}
+	.typewriter h5{
+	  overflow: hidden; /* Ensures the content is not revealed until the animation */
+	  /*border-right: .15em solid transparent;  The typewriter cursor */
+	  border-right: none;
+	 white-space: nowrap;  .cSlider .padding pKeeps the content on a single line */
+	  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	  letter-spacing: .15em; /* Adjust as needed */
+	  animation: 
+	    typing2 3.5s steps(40, end),
+	    blink-caret .75s step-end infinite;
+	  width: 55%;
+	  -webkit-animation-fill-mode:both;
+	   -webkit-animation-delay: 5s;
+	  animation-delay: 5s;
+	}
+	.typewriter #second{
+	  overflow: hidden; /* Ensures the content is not revealed until the animation */
+	  /*border-right: .15em solid #09abf4;  The typewriter cursor */
+	 white-space: nowrap;  .cSlider .padding pKeeps the content on a single line */
+	  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	  letter-spacing: .15em; /* Adjust as needed */
+	  animation: 
+	    typing2 3.5s steps(40, end),
+	    blink-caret .75s step-end infinite;
+	  width: 55%;
+	  -webkit-animation-fill-mode:both;
+	   -webkit-animation-delay: 5s;
+	  animation-delay: 10s;
 	}
 	#cRow{
-		padding: 0 10px 0 30px;
+		padding: 0px;
 	}
 	.half-section, .other-half-section .c-sections .ctext{
 		padding-right: 0;
 	}
+	.other-half-section .c-sections{
+		padding: 0 15px;
+	}
+	.flip{
+		margin-left: 0px;
+	}
+	.flip .card .front {
+	    padding-top: 20%;
+	}
 	.social-links ul{
 		padding: 0 30px;
+	}
+}
+@media (max-device-width:320px) {
+	.banner-text h1{
+		font-size: 2em;
+	}
+	.typewriter h5,.typewriter #second{
+		letter-spacing: .06em;
+	}
+	#create .heading h2{
+		font-size: 1.7em;
+	}
+	.social-links ul {
+	    padding: 0 8px;
 	}
 }

@@ -63,6 +63,7 @@ section{
 header{
   min-height: 300px;
     padding: 10% 0;
+    position: relative;
 }
 /*.banner-text{
 	color: #000;
@@ -97,6 +98,9 @@ header{
     line-height: 1.57;
     text-align: center;
 }
+.banner-text .display-h{
+  display: none;
+}
 .typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   /*border-right: .15em solid #09abf4;  The typewriter cursor */
@@ -109,7 +113,7 @@ header{
 }
 .typewriter h5{
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #09abf4; /* The typewriter cursor */
+  /*border-right: .15em solid #09abf4;  The typewriter cursor */
  white-space: nowrap;  .cSlider .padding pKeeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
@@ -129,7 +133,7 @@ header{
 }
 @keyframes typing2 {
   from { width: 0 }
-  to { width: 55% }
+  to { width: 100% }
 }
 
 /* The typewriter cursor effect */
@@ -438,6 +442,7 @@ header{
 .flip .card {
     width: 270px;
     height: 178px;
+    width: 100%;
     -webkit-transform-style: preserve-3d;
     -webkit-transition: 0.5s;
     transform-style: preserve-3d;
@@ -457,6 +462,7 @@ header{
    z-index: 1;
    background-color: #2e3240;
     height: 100%;
+    width: 100%;
     color: #fff;
    padding-top: 25%;
 }
